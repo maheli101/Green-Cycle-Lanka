@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      <h1>laka</h1>
+      <h1>laka sampath</h1>
     
     </>
   )
