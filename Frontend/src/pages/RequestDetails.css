@@ -1,0 +1,62 @@
+/* Style the form container */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('./assest/photos/yard.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Style the form */
+  .form {
+    width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    border-radius: 5px;
+    background-color: rgba(red, green, blue, alpha);
+  }
+  
+  /* Style form heading */
+  .form h2 {
+    margin-bottom: 20px;
+  }
+  
+  /* Style form labels */
+  .form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  /* Style form inputs */
+  .form input[type="text"],
+  .form input[type="number"],
+  .form select,
+  .form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  /* Style form button */
+  .form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Style form button on hover */
+  .form button:hover {
+    background-color: #0056b3;
+  }
+  
