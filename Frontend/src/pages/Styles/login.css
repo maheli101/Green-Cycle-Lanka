@@ -1,0 +1,138 @@
+
+.all{
+    margin:auto 400px;
+    width:700px;
+
+}
+.signin-full {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    margin: 100px auto;
+    border-radius: 30px;
+    background-color: rgb(219, 231, 241);
+    opacity: 0.88;
+    
+
+}
+
+.sign-in-upper{
+    margin-top:15px;
+    width:520px;
+    height: 100px;
+    background-color:#2cb422;
+    display: flex;
+    flex-direction: column;
+    align-items:center; 
+    border-radius: 40px;
+    border-color: black;
+    border-width: 3px;
+    
+}
+
+
+
+.sign-in-upper2{
+    color: rgb(252, 253, 253);
+    font-weight: bold;
+    font-size:30px;
+    margin:20px auto;
+    
+}
+ 
+.all-letters{
+    display:flex;
+    flex-direction: column;
+    margin-top:35px;
+    gap:20px;
+    border:none; 
+    
+}
+
+
+.letters{
+   display: flex;
+   align-items: center;
+   margin:auto;
+   width:400px;
+   height:40px;
+   background-color: beige;
+   border-radius:10px; 
+}
+.letters img{
+    margin:0px 30px;
+    height:20px;
+}
+.letters input{
+    height:30px;
+    width:500px;
+    background:transparent;
+    border:none;
+    outline:none;
+    color:rgb(0, 0, 0);
+    font-size: 17px;
+    font-weight:bold;
+    
+
+}
+
+::placeholder{
+    font-size:15px;
+    font-style:italic;
+    color:rgb(0, 0, 0);
+}
+.sign-in-legs{
+    display:flex;
+    flex-direction:column;
+}
+.sign-in-legs1{
+
+    margin-left: 50%;
+    margin-right: 50%;
+    margin-top:60px;
+    width: 200px;
+    height: 70px;
+    font-weight: bold;
+    font-size: 25px;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+    background: #329ec9;
+    border: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    padding: 12px 24px;
+    border-radius: 999px;
+    outline: none;
+    text-shadow: 0 1px 2px #0252165b;
+    box-shadow: 0 2px 8px -1px #0252165b,
+                0 0 12px #0252165b;
+    transition: box-shadow 0.2s ease-in-out;
+  }
+  .sign-in-legs1:hover, button:focus {
+    box-shadow:0 2px 8px -1px #000c035b,
+               0 0 16px 4px #0c0c0c5b,
+               0 0 6px 2px #0505055b;
+
+}
+.log-in:active{
+    background-color: rgb(22, 100, 165);
+    border-color: #69e4875b;
+    box-Shadow: none;
+    color:black;
+
+}
+ body {
+    background-image: url('../../assets/login/logback.jpg');
+    background-position: center;
+    background-size: cover; 
+    width: 100vw;
+    height: 100vh;
+    
+} 
+
+
+
+
+
+
+ 
