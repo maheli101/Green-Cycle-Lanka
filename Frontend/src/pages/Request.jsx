@@ -68,6 +68,7 @@ const Request = () => {
             style={styles.input}
           />
         </div>
+        <p style={styles.processingText}>We are processing your order</p>
         <div style={styles.buttons}>
           <button type="submit" style={styles.button}>
             Ok
@@ -124,6 +125,11 @@ const styles = {
     padding: "8px",
     borderRadius: "5px",
     border: "1px solid #ccc",
+  },
+  processingText: {
+    textAlign: "center",
+    margin: "20px 0",
+    color: "#333",
   },
   buttons: {
     display: "flex",
