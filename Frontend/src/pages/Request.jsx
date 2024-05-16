@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import backgroundImage from "../assets/RequestDetails.jpg";
 
 const Request = () => {
   const [name, setName] = useState("");
@@ -84,7 +85,7 @@ const Request = () => {
 
 const styles = {
   container: {
-    backgroundImage: `url('https://via.placeholder.com/150')`, // Replace with your background image URL
+    backgroundImage: "url('../assets/RequestDetails.jpg')", // Replace with your background image URL
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
     padding: "20px",
@@ -127,6 +128,7 @@ const styles = {
     border: "1px solid #ccc",
   },
   processingText: {
+    
     textAlign: "center",
     margin: "20px 0",
     color: "#333",
