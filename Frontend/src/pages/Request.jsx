@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import backgroundImage from "../assets/RequestDetails.jpg";
 
 const Request = () => {
   const [name, setName] = useState("");
@@ -9,18 +8,18 @@ const Request = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Perform validation
+   
     if (!name || !type || !amount || !address) {
       alert("Please fill in all fields");
       return;
     }
-    // Example validation for address
+   
     const addressPattern = /^[a-zA-Z0-9\s,.'-]{3,}$/;
     if (!addressPattern.test(address)) {
       alert("Please enter a valid address");
       return;
     }
-    // Proceed with form submission
+  
     alert("Form submitted successfully!");
   };
 
@@ -69,7 +68,8 @@ const Request = () => {
             style={styles.input}
           />
         </div>
-        <p style={styles.processingText}>We are processing your order</p>
+        <p style={styles.processingText}>We are processing your Request</p>
+        <p style={styles.viewde}>View Pickup Request Details in Your User Account</p>
         <div style={styles.buttons}>
           <button type="submit" style={styles.button}>
             Ok
@@ -85,7 +85,7 @@ const Request = () => {
 
 const styles = {
   container: {
-    backgroundImage: "url('../assets/RequestDetails.jpg')", // Replace with your background image URL
+    backgroundImage: "url('./assets/RequestDetails.jpg')", // Replace with your background image URL
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
     padding: "20px",
@@ -129,6 +129,14 @@ const styles = {
   },
   processingText: {
     
+    textAlign: "center",
+    margin: "20px 0",
+    color: "#333",
+
+  
+  },
+
+  viewde:{ 
     textAlign: "center",
     margin: "20px 0",
     color: "#333",

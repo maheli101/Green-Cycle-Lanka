@@ -1,77 +1,85 @@
 import React, { useState } from 'react';
+import PlasticImage from '../assets/Plastic.png';
+import PaperImage from '../assets/Paper.png';
+import MetalImage from '../assets/Metal.png';
+import GlassImage from '../assets/Glass.png';
 
-export default function PickupRequest() {
-  const [requestNo, setRequestNo] = useState('');
-  const [requestType, setRequestType] = useState('plastic');
-  const [amount, setAmount] = useState('20kg');
-  const [address, setAddress] = useState('');
-  const [requestStatus, setRequestStatus] = useState('processing');
+const SelectItem = () => {
+    const [selectedItem, setSelectedItem] = useState('Plastic');
+    const [weight, setWeight] = useState('');
+    const [address, setAddress] = useState('');
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle form submission here (e.g., send data to server)
-    console.log('Form submitted:', {
-      requestNo,
-      requestType,
-      amount,
-      address,
-      requestStatus,
-    });
-  };
+    const validateAddress = (address) => {
+        // Add address validation logic here
+        return true;
+    };
 
-  return (
-    <form onSubmit={handleSubmit}>
-      <div>
-        <label htmlFor="requestNo">Request No:</label>
-        <input
-          type="text"
-          id="requestNo"
-          value={requestNo}
-          onChange={(e) => setRequestNo(e.target.value)}
-        />
-      </div>
-      <div>
-        <label htmlFor="requestType">Type:</label>
-        <select
-          id="requestType"
-          value={requestType}
-          onChange={(e) => setRequestType(e.target.value)}
-        >
-          <option value="plastic">Plastic</option>
-          <option value="glass">Glass</option>
-          <option value="metal">Metal</option>
-          <option value="paper">Paper</option>
-          {/* Add other options here */}
-        </select>
-      </div>
-      <div>
-        <label htmlFor="amount">Amount:</label>
-        <input
-          type="text"
-          id="amount"
-          value={amount}
-          onChange={(e) => setAmount(e.target.value)}
-        />
-      </div>
-      <div>
-        <label htmlFor="address">Address:</label>
-        <input
-          type="text"
-          id="address"
-          value={address}
-          onChange={(e) => setAddress(e.target.value)}
-        />
-      </div>
-      <div>
-        <label htmlFor="requestStatus">Request Status:</label>
-        <input
-          type="text"
-          id="requestStatus"
-          value={requestStatus}
-          onChange={(e) => setRequestStatus(e.target.value)}
-        />
-      </div>
-      <button type="submit">Submit</button>
-    </form>
-  );
-}
+    return (
+        <div className="select-item-container">
+            <select value={selectedItem} onChange={(e) => setSelectedItem(e.target.value)}>
+                <option value="Plastic">Plastic</option>
+                <option value="Paper">Paper</option>
+                <option value="Metal">Metal</option>
+                <option value="Glass">Glass</option>
+            </select>
+
+            {selectedItem === "Plastic" && <img src={PlasticImage} alt="Plastic" />}
+            {selectedItem === "Paper" && <img src={PaperImage} alt="Paper" />}
+            {selectedItem === "Metal" && <img src={MetalImage} alt="Metal" />}
+            {selectedItem === "Glass" && <img src={GlassImage} alt="Glass" />}
+
+            <label className="input-label">
+                Amount/Weight (kg):
+                <input type="number" value={weight} onChange={(e) => setWeight(e.target.value)} />
+            </label>
+
+            <label className="input-label">
+                Address:
+                <input
+                    type="text"
+                    value={address}
+                    onChange={(e) => setAddress(e.target.value)}
+                    onBlur={() => validateAddress(address)}
+                />
+            </label>
+
+            {validateAddress(address) && weight !== '' && (
+                <button className="next-button" onClick={() => console.log('Next')}>
+                    Next
+                </button>
+            )}
+
+            <style jsx>{`
+                .select-item-container {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                select {
+                    /* Add your select styles here */
+                }
+
+                img {
+                    max-width: 100%;
+                    height: auto;
+                }
+
+                .input-label {
+                    margin-top: 10px;
+                }
+
+                .next-button {
+                    margin-top: 20px;
+                    background-color: #0078d4;
+                    color: white;
+                    border: none;
+                    padding: 10px 20px;
+                    cursor: pointer;
+                }
+            `}</style>
+        </div>
+    );
+};
+
+export default SelectItem;
