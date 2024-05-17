@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './RequestDetails.css'; // Assuming you have a CSS file for styling
+import './RequestDetails.css'; 
 
 
 const styles = {
@@ -8,7 +8,6 @@ const styles = {
     justifyContent: 'center',
     alignItems: 'center',
     height: '100vh',
-    /* Update the background image URL or import the image */
     backgroundImage: `url('path_to_your_image')`,
     backgroundSize: 'cover',
     backgroundPosition: 'center'
@@ -30,7 +29,7 @@ export default function RequestDetails() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Add your form submission logic here (e.g., API call, data processing)
+    
     console.log('Form submitted:', formData);
   };
 

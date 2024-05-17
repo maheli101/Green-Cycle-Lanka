@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import PlasticImage from '../assets/Plastic.png';
-import PaperImage from '../assets/Paper.png';
-import MetalImage from '../assets/Metal.png';
-import GlassImage from '../assets/Glass.png';
+import PlasticImage from '../assets/Plastic.jpg'; 
+import PaperImage from '../assets/Paper.jpg';
+import MetalImage from '../assets/Metal.jpg';
+import GlassImage from '../assets/Glass.jpg';
 
 const SelectItem = () => {
     const [selectedItem, setSelectedItem] = useState('Plastic');
@@ -11,7 +11,7 @@ const SelectItem = () => {
     const [addressError, setAddressError] = useState('');
 
     const validateAddress = (address) => {
-        // Simple validation for demonstration (you can replace it with your own validation logic)
+        
         if (!address.trim()) {
             setAddressError('Address is required');
             return false;
@@ -24,7 +24,7 @@ const SelectItem = () => {
     const handleNext = () => {
         if (validateAddress(address) && weight.trim() !== '') {
             console.log('Next');
-            // Proceed to the next step
+    
         } else {
             console.log('Validation failed');
         }

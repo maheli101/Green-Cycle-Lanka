@@ -10,7 +10,6 @@ const SelectItem = () => {
     const [address, setAddress] = useState('');
 
     const validateAddress = (address) => {
-        // Add address validation logic here
         return true;
     };
 

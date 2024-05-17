@@ -85,7 +85,7 @@ const Request = () => {
 
 const styles = {
   container: {
-    backgroundImage: "url('./assets/RequestDetails.jpg')", // Replace with your background image URL
+    backgroundImage: "url('./assets/RequestDetails.jpg')", 
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
     padding: "20px",
