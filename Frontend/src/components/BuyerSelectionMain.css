@@ -1,0 +1,29 @@
+.category-buttons {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .category-buttons button {
+    width: 200px; /* Set the width of the buttons */
+    height: 200px; /* Set the height of the buttons */
+    border: none; /* Remove border */
+    background-size: cover; /* Ensure the background image covers the button */
+    cursor: pointer; /* Change cursor to pointer on hover */
+  }
+
+  /* Set background images for each button */
+  .glass {
+    background-image: url('../assets/paper.jpg');
+  }
+
+  .metal {
+    background-image: url('metal_image_url_here');
+  }
+
+  .paper {
+    background-image: url('paper_image_url_here');
+  }
+
+  .plastic {
+    background-image: url('plastic_image_url_here');
+  }
