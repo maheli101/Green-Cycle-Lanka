@@ -1,0 +1,28 @@
+footer {
+    background-color: #68C36C;
+    color: white;
+    padding: 30px 20px;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .contact-details {
+    text-align: center;
+  }
+  
+  .contact-details h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .contact-details p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .contact-details strong {
+    font-weight: bold;
+  }
