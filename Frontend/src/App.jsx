@@ -1,17 +1,38 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import React from 'react';
+import {BrowserRouter ,Routes, Route} from "react-router-dom";
 import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
+import Yardenterence from "./pages/Yardenterence";
+import Pick from "./pages/Pick";
+import Order from "./pages/Order";
+import Update from "./pages/Update";
 
+
+
+export default function App() {
   return (
     <>
-      <h1>laka sampath</h1>
+
+    <BrowserRouter>
     
+      <Routes>
+        
+        <Route path="/yardentrance" element={<Yardenterence />}> </Route>
+        <Route path="/Pick" element={<Pick />} >  </Route>
+        <Route path="/Order" element={<Order />}> </Route>
+        <Route path="/Update" element={<Update />} >  </Route>
+
+      </Routes>
+    </BrowserRouter>
     </>
-  )
+  );
 }
 
-export default App
+
+
+
+
+
+
+ 
+

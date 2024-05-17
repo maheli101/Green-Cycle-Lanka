@@ -1,0 +1,134 @@
+body {
+    background-color: #f2f2f2;
+    margin: 0;
+  }
+  
+  .container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  .yard {
+    width: 900px;
+    height: 500px;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.267);
+    border-radius: 20px;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    
+   
+  }
+  
+  .title {
+    background-color: green;
+    width: 500px;
+    height: 70px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+  }
+  
+  .title h1 {
+    color: white;
+    font-size: 2.5rem;
+    margin-top: 15px;
+  }
+  
+  .title button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .title button:hover {
+    background-color: #45a049;
+  }
+  
+  .footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+    
+
+
+
+
+.container {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(0, 0, 0, 0.2);
+    
+}
+
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    margin-left: 800px;
+    margin-top:300px ;
+}
+
+.overlay h1 {
+    margin-top: 10px;
+    
+    font-size: 2em;
+    color:white;
+}
+
+
+
+.overlay button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #2b9bcfb2;
+    color: rgb(4, 12, 4);
+    
+    
+    font-size: 20px;
+   
+   
+    border-radius: 10px;
+    
+    
+   
+    width: 400px;
+    height:auto;
+    
+    
+}
+
+.overlay button:hover {
+    background-color: rgba(255, 255, 0, 0.651);
+    color: red;
+}
+
