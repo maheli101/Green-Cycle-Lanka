@@ -1,17 +1,16 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+
+import "./App.css";
+import BuyerSelectionPage from "./pages/BuyerSelectionPage";
+import HomePage from "./pages/HomePage";
+
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <h1>laka sampath</h1>
-    
-    </>
-  )
+    <div className="App">
+   <HomePage/>
+
+    </div>
+  );
 }
 
-export default App
+export default App;
