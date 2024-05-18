@@ -2,7 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Request from './pages/Request'
+import PickupStatus from './pages/PickupStatus'
 
 
 
@@ -11,7 +11,7 @@ function App() {
 
   return (
    <div>
-      <Request/>
+      <PickupStatus/>
             
    </div>
   )
