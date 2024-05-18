@@ -1,8 +1,5 @@
 import React, { useState } from 'react';
-import PlasticImage from '../assets/Plastic.jpg'; 
-import PaperImage from '../assets/Paper.jpg';
-import MetalImage from '../assets/Metal.jpg';
-import GlassImage from '../assets/Glass.jpg';
+
 
 const SelectItem = () => {
     const [selectedItem, setSelectedItem] = useState('Plastic');
@@ -31,19 +28,7 @@ const SelectItem = () => {
     };
 
     return (
-        <div className="select-item-container">
-            <select value={selectedItem} onChange={(e) => setSelectedItem(e.target.value)}>
-                <option value="Plastic">Plastic</option>
-                <option value="Paper">Paper</option>
-                <option value="Metal">Metal</option>
-                <option value="Glass">Glass</option>
-            </select>
-
-            {selectedItem === "Plastic" && <img src={PlasticImage} alt="Plastic" />}
-            {selectedItem === "Paper" && <img src={PaperImage} alt="Paper" />}
-            {selectedItem === "Metal" && <img src={MetalImage} alt="Metal" />}
-            {selectedItem === "Glass" && <img src={GlassImage} alt="Glass" />}
-
+        <div >
             <label className="input-label">
                 Amount/Weight (kg):
                 <input type="number" value={weight} onChange={(e) => setWeight(e.target.value)} />
